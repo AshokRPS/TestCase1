@@ -74,7 +74,7 @@ public class Results {
         return picture;
     }
 
-    public static class Builder{
+    public static class Builder {
         private String gender, email, phone, cell, nat;
         private Name name;
         private Location location;
@@ -144,7 +144,7 @@ public class Results {
             return this;
         }
 
-        public Results build(){
+        public Results build() {
             return new Results(this);
         }
     }

@@ -2,8 +2,8 @@ package dto;
 
 public class Info {
 
-    
-     private String seed, results, page, version;
+
+    private String seed, results, page, version;
 
     public Info(Builder builder) {
         this.seed = builder.seed;
@@ -28,7 +28,7 @@ public class Info {
         return version;
     }
 
-    public static class Builder{
+    public static class Builder {
         private String seed, results, page, version;
 
         public Builder setSeed(String seed) {
@@ -51,7 +51,7 @@ public class Info {
             return this;
         }
 
-        public Info build(){
+        public Info build() {
             return new Info(this);
         }
     }

@@ -17,7 +17,7 @@ public class Street {
         return name;
     }
 
-    public static class Builder{
+    public static class Builder {
         private String number, name;
 
         public Builder setNumber(String number) {
@@ -30,7 +30,7 @@ public class Street {
             return this;
         }
 
-        public Street buiuld(){
+        public Street buiuld() {
             return new Street(this);
         }
     }

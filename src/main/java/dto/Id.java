@@ -16,7 +16,7 @@ public class Id {
         return value;
     }
 
-    public static class Builder{
+    public static class Builder {
         private String name, value;
 
         public Builder setName(String name) {
@@ -29,7 +29,7 @@ public class Id {
             return this;
         }
 
-        public Id build(){
+        public Id build() {
             return new Id(this);
         }
     }

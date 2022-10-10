@@ -16,7 +16,7 @@ public class UserDates {
         return age;
     }
 
-    public static class Builder{
+    public static class Builder {
         private String date, age;
 
         public Builder setDate(String date) {
@@ -29,7 +29,7 @@ public class UserDates {
             return this;
         }
 
-        public UserDates build(){
+        public UserDates build() {
             return new UserDates(this);
         }
     }

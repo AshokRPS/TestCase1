@@ -6,7 +6,7 @@ public class Location {
     private Coordinates coordinates;
     private TimeZone timeZone;
 
-    public Location(Builder builder){
+    public Location(Builder builder) {
         this.street = builder.street;
         this.city = builder.city;
         this.state = builder.state;
@@ -44,7 +44,7 @@ public class Location {
         return timeZone;
     }
 
-    public static class Builder{
+    public static class Builder {
         private Street street;
         private String city, state, country, postcode;
         private Coordinates coordinates;
@@ -85,7 +85,7 @@ public class Location {
             return this;
         }
 
-        public Location build(){
+        public Location build() {
             return new Location(this);
         }
     }

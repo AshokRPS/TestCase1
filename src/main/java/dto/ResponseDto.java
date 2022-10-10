@@ -20,7 +20,7 @@ public class ResponseDto {
         return info;
     }
 
-    public static class Builder{
+    public static class Builder {
         private List<Results> results;
         private Info info;
 
@@ -34,7 +34,7 @@ public class ResponseDto {
             return this;
         }
 
-        public ResponseDto build(){
+        public ResponseDto build() {
             return new ResponseDto(this);
         }
     }

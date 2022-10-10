@@ -1,7 +1,7 @@
 package dto;
 
 public class Name {
-    
+
     private String title, first, last;
 
     public Name(Builder builder) {
@@ -22,7 +22,7 @@ public class Name {
         return last;
     }
 
-    public static class Builder{
+    public static class Builder {
         private String title, first, last;
 
         public Builder setTitle(String title) {
@@ -40,7 +40,7 @@ public class Name {
             return this;
         }
 
-        public Name build(){
+        public Name build() {
             return new Name(this);
         }
     }

@@ -4,7 +4,7 @@ public class TimeZone {
 
     private String offset, description;
 
-    private TimeZone(Builder builder){
+    private TimeZone(Builder builder) {
         this.offset = builder.offset;
         this.description = builder.description;
     }
@@ -17,7 +17,7 @@ public class TimeZone {
         return description;
     }
 
-    public static class Builder{
+    public static class Builder {
         private String offset, description;
 
         public Builder setOffset(String offset) {
@@ -30,7 +30,7 @@ public class TimeZone {
             return this;
         }
 
-        public TimeZone build(){
+        public TimeZone build() {
             return new TimeZone(this);
         }
     }

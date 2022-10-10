@@ -17,7 +17,7 @@ public class Coordinates {
         return longitude;
     }
 
-    public static class Builder{
+    public static class Builder {
         private String latitude, longitude;
 
         public Builder latitude(String latitude) {
@@ -29,8 +29,8 @@ public class Coordinates {
             this.longitude = longitude;
             return this;
         }
-        
-        public Coordinates build(){
+
+        public Coordinates build() {
             return new Coordinates(this);
         }
     }

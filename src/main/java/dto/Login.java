@@ -3,7 +3,7 @@ package dto;
 public class Login {
     private String uuid, username, password, salt, md5, sha1, sha256;
 
-    public Login(Builder builder){
+    public Login(Builder builder) {
         this.uuid = builder.uuid;
         this.username = builder.username;
         this.password = builder.password;
@@ -41,7 +41,7 @@ public class Login {
         return sha256;
     }
 
-    public static class Builder{
+    public static class Builder {
         private String uuid, username, password, salt, md5, sha1, sha256;
 
         public Builder setUuid(String uuid) {
@@ -79,7 +79,7 @@ public class Login {
             return this;
         }
 
-        public Login build(){
+        public Login build() {
             return new Login(this);
         }
     }

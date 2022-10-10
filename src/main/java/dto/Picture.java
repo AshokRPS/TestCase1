@@ -1,7 +1,7 @@
 package dto;
 
 public class Picture {
-    private  String large, medium, small;
+    private String large, medium, small;
 
     public Picture(Builder builder) {
         this.large = builder.large;
@@ -21,8 +21,8 @@ public class Picture {
         return small;
     }
 
-    public static class Builder{
-        private  String large, medium, small;
+    public static class Builder {
+        private String large, medium, small;
 
 
         public Builder setLarge(String large) {
@@ -40,7 +40,7 @@ public class Picture {
             return this;
         }
 
-        public Picture build(){
+        public Picture build() {
             return new Picture(this);
         }
     }
